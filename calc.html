@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+        #nav{
+            margin-top: 15px;
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            background-color: aqua;
+            padding: 15px;
+            border-radius: 20px;
+        }
+        #content{
+            width: 90%;
+            margin-top: 20px;
+            margin: auto;
+            padding: 15px;
+        }
+        #content button{
+            
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-left: 5px;
+           background-color: rgb(58, 63, 60);
+            margin-top: 5px;
+        }
+
+        #zeroid{
+            margin-left: 50px;
+        }
+
+        #content p{
+            border: 1px solid;
+            height: 30px;
+            border-radius: 5px;
+            padding: auto;
+            padding-left:10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-size: 25px;
+            background-color: white;
+            color: black;
+        }
+
+        #btn{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+      <h1>Calculadora de notas</h1> 
+      <button id="btn">modo dark</button> 
+    </nav>
+    <div id="content">
+        <h3>Ponha abaixo suas notas:</h3>
+
+        <p id="screenid">aqui</span></p>
+        <br>
+    
+            <button value="1" onclick="entryNum(1), dscreen('1')" >1</button>
+            <button onclick="bnumber(2)">2</button>
+            <button onclick="bnumber(3)">3</button>
+            <button onclick="bnumber(4)">4</button>
+            <button onclick="bnumber(5)">5</button>
+            <button onclick="bnumber(6)">6</button>
+            <button onclick="bnumber(7)">7</button>
+            <button onclick="bnumber(8)">8</button>
+            <button onclick="bnumber(9)">9</button>
+            <button onclick="bnumber(0)">0</button>
+        <script>
+            var btn = document.getElementById("btn")
+            var nav = document.getElementById("nav")
+          
+            btn.onclick=function darkmode() {
+                
+                document.body.style.backgroundColor = ("black")
+                document.body.style.color= ("white")
+                btn.innerText= "ligth"
+                nav.style.backgroundColor = "gray"
+                
+            }
+
+            btn.ondblclick= function ligthmode() {
+                
+                document.body.style.backgroundColor = ("white")
+                document.body.style.color= ("black")
+                btn.innerText= "dark"
+                nav.style.backgroundColor = "aqua"
+       
+            }
+        </script>
+
+    <button id="enter" onclick="enter(true)"></button>
+    </div>
+</html>
