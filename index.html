@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 08</title>
+
+
+    <style>
+        nav {
+            margin: auto;
+            width: 90%;
+            border-radius: 15px;
+            text-align: center;
+            background-color: aqua;
+            padding: 15px;
+            font-family: 'Arial';
+        }
+
+        p {
+            font-size: 18px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #content {
+            margin: auto;
+            padding: 30px;
+            display: none;
+        }
+
+        #tela {
+            background-color: white;
+            color: black;
+            margin: auto;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Arial';
+        }
+
+        #calco{
+            display: block;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Calculadora de Notas</h1>
+    </nav>
+
+    <p>O app foi criado visando ajudar a calcular a sua media anual</p>
+    <p>A media da Nossa senhora do carmo é <b>50</b></p>
+
+    <button id="calco" > Calcular</button>
+    <br>
+    <div id="content">
+        <p id="tela">
+            fvh
+        </p>
+        
+    </div>
+
+
+    <footer>
+        <h3 style="text-align: center;">Desenvolvido por Antonio Esdras &copy;</h3>
+    </footer>
+    <script src="index.js" >
+        var button = document.getElementById("btn")
+       
+        var calc = document.getElementById("calco")
+
+        calc.onclick= cal
+        
+
+    button.onclick = function rise() {
+            let content = document.getElementById("content")
+            content.style.display = "block"
+        }
+    </script>
+</body>
+
+</html>
